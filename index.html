@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Scratra : Python-Scratch is no longer a pain" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Scratra</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/Gratimax/Scratra">Fork Me on GitHub</a>
+
+          <h1 id="project_title">Scratra</h1>
+          <h2 id="project_tagline">Python-Scratch is no longer a pain</h2>
+
+          <section id="downloads">
+            <a class="zip_download_link" href="https://github.com/Gratimax/Scratra/zipball/master">Download this project as a .zip file</a>
+            <a class="tar_download_link" href="https://github.com/Gratimax/Scratra/tarball/master">Download this project as a tar.gz file</a>
+          </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h3>Put this in your pipe:</h3>
+
+<div class="highlight">
+<pre><span class="c">#test.py</span>
+<span class="kn">from</span> <span class="nn">scratra</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="nd">@broadcast</span><span class="p">(</span><span class="s">'hi'</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">hi</span><span class="p">(</span><span class="n">scratch</span><span class="p">):</span>
+  <span class="k">print</span> <span class="s">'Hello, world!'</span>
+
+<span class="n">run</span><span class="p">()</span>
+</pre>
+</div>
+
+
+<h3>A little more</h3>
+
+<p>Download scratra.py.
+Start scratch, enable remote sensor connections.</p>
+
+<h3>Then smoke it</h3>
+
+<div class="highlight">
+<pre><span class="nb">cd </span>your_dir
+python test.py
+</pre>
+</div>
+
+
+<p>In scratch, make a broadcast called <code>'hi'</code> and run.<br>
+You just saved yourself a <em>headache</em>.</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Scratra maintained by <a href="https://github.com/Gratimax">Gratimax</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
