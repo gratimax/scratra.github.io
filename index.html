@@ -1,79 +1,79 @@
 <!DOCTYPE html>
 <html>
 
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Scratra : Python-Scratch is no longer a pain" />
+    <head>
+        <meta charset='utf-8' />
+        <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+        <meta name="description" content="Scratra : Sinatra-inspired Scratch connections framework" />
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="css/skeleton.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="css/highlight/tomorrow.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
 
-    <title>Scratra</title>
-  </head>
+        <script type="text/javascript" src="js/vendor/highlight.min.js"></script>
+        <script type="text/javascript" src="js/vendor/highlight.min.js"></script>
+        <script>
+            hljs.initHighlightingOnLoad();
+        </script>
 
-  <body>
+        <title>Scratra</title>
+    </head>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/Gratimax/Scratra">Fork Me on GitHub</a>
+    <body>
 
-          <h1 id="project_title">Scratra</h1>
-          <h2 id="project_tagline">Python-Scratch is no longer a pain</h2>
+        <div class="back-img"></div>
 
-          <section id="downloads">
-            <a class="zip_download_link" href="https://github.com/Gratimax/Scratra/zipball/master">Download this project as a .zip file</a>
-            <a class="tar_download_link" href="https://github.com/Gratimax/Scratra/tarball/master">Download this project as a tar.gz file</a>
-          </section>
-        </header>
-    </div>
+        <!--header class="container">
+            <div class="sixteen columns">
+                <span class="title">Scratra</span>
+            </div>
+        </header>-->
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>Put this in your pipe:</h3>
+        <div class="main">
+            <section class="container sub">
+                <aside class="sidebar four columns">
+                    <h1>Scratra</h1>
+                </aside>
+                <article class="nav ten columns">
+                    <h2><a>Readme</a></h2>
+                    <h2><a>Documentation</a></h2>
+                    <h2><a>Code</a></h2>
+                    <h2><a>Download</a></h2>
+                </article>
+            </section>
+            <section class="container sub">
+                <aside class="sidebar four columns">
+                    <h2>Put this in your catnip</h2>
+                </aside>
+                <article class="ten columns">
+<pre>
+<code class="python">#first.py
+from scratra import *
 
-<div class="highlight">
-<pre><span class="c">#test.py</span>
-<span class="kn">from</span> <span class="nn">scratra</span> <span class="kn">import</span> <span class="o">*</span>
+@start
+def whenstart(scratch):
+  print 'Hello, World!'
 
-<span class="nd">@broadcast</span><span class="p">(</span><span class="s">'hi'</span><span class="p">)</span>
-<span class="k">def</span> <span class="nf">hi</span><span class="p">(</span><span class="n">scratch</span><span class="p">):</span>
-  <span class="k">print</span> <span class="s">'Hello, world!'</span>
+@broadcast('hi, scratra!')
+def hi(scratch):
+  print 'Hi, Scratch!'
 
-<span class="n">run</span><span class="p">()</span>
+run()
+</code>
 </pre>
-</div>
-
-
-<h3>A little more</h3>
-
-<p>Download scratra.py.
-Start scratch, enable remote sensor connections.</p>
-
-<h3>Then smoke it</h3>
-
-<div class="highlight">
-<pre><span class="nb">cd </span>your_dir
-python test.py
+                </article>
+            </section>
+            <section class="container sub">
+                <aside class="sidebar four columns">
+                    <h2>And then meow</h2>
+                </aside>
+                <article class="ten columns">
+<pre>
+<code class="bash"><span class="keyword">$</span> <span class="title">python</span> <span class="params">first.py</span></code>
 </pre>
-</div>
+                </article>
+            </section>
+        </div>
 
-
-<p>In scratch, make a broadcast called <code>'hi'</code> and run.<br>
-You just saved yourself a <em>headache</em>.</p>
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Scratra maintained by <a href="https://github.com/Gratimax">Gratimax</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
-    
-
-  </body>
+    </body>
 </html>
