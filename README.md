@@ -1,4 +1,3 @@
-scratra.github.io
-=================
+# Scratra docs
 
-Site for scratra
+Site for scratra. Docs are made the hard way. Use
