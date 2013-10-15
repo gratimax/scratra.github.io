@@ -7,8 +7,9 @@
         <meta name="description" content="Scratra : Sinatra-inspired Scratch connections framework" />
 
         <link rel="stylesheet" type="text/css" media="screen" href="css/skeleton.css">
-        <link rel="stylesheet" type="text/css" media="screen" href="css/highlight/tomorrow.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="css/highlight/github.css">
         <link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="css/layout.css">
 
         <script type="text/javascript" src="js/vendor/highlight.min.js"></script>
         <script type="text/javascript" src="js/vendor/highlight.min.js"></script>
@@ -23,7 +24,7 @@
 
         <div class="back-img"></div>
 
-        <a href="http://github.com/gratimax/">
+        <a href="http://github.com/scratra/">
             <img
                 style="position: absolute; top: 0; right: 0; border: 0;"
                 src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"
@@ -41,12 +42,12 @@
                 <aside class="sidebar four columns">
                     <h1>Scratra</h1>
                 </aside>
-                <article class="nav ten columns">
-                    <h2><a>Readme</a></h2>
-                    <h2><a>Documentation</a></h2>
-                    <h2><a>Code</a></h2>
+                <nav class="ten columns">
+                    <h2><a href="">Readme</a></h2>
+                    <h2><a href="docs/">Documentation</a></h2>
+                    <h2><a href="http://github.com/scratra/scratra">Code</a></h2>
                     <h2><a>Download</a></h2>
-                </article>
+                </nav>
             </section>
             <section class="container sub">
                 <aside class="sidebar four columns">
@@ -54,16 +55,15 @@
                 </aside>
                 <article class="ten columns">
 <pre>
-<code class="python"># first.py
-from scratra import *
+<code class="python">from scratra import *
 
 @start
-def whenstart(scratch):
-  print 'Hello, World!'
+def onstart(scratch):
+    print('Started!')
 
-@broadcast('hi, scratra!')
+@broadcast('hi')
 def hi(scratch):
-  print 'Hi, Scratch!'
+    scratch.broadcast('Hello, World!')
 
 run()
 </code>
@@ -76,7 +76,11 @@ run()
                 </aside>
                 <article class="ten columns">
 <pre>
-<code class="bash"><span class="keyword">$</span> <span class="title">python</span> <span class="params">first.py</span></code>
+<code class="bash"><span class="keyword">$</span> <span class="title function">python</span> <span class="params">hi.py</span><span class="string">
+blah blah
+blah
+</span>
+</code>
 </pre>
                 </article>
             </section>
