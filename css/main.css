@@ -1,5 +1,5 @@
 body {
-    font-family: Georgia, serif !important;
+    font-family: Georgia, serif;
     color: #111;
 }
 
@@ -55,7 +55,7 @@ aside h2 {
 }
 
 nav {
-    font-family: 'lucida console', monaco, 'andale mono', 'bitstream vera sans mono', consolas, monospace;
+    font-family: 'lucida console', monaco, 'andale mono', 'bitstream vera sans mono', consolas, !important;
 }
 
 nav h2 {
@@ -66,6 +66,7 @@ nav h2 {
 
 nav a {
     color: #555;
+    font-family: 'lucida console', monaco, 'andale mono', 'bitstream vera sans mono', consolas, !important;
 }
 
 .nav a:active {
