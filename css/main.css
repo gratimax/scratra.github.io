@@ -1,0 +1,78 @@
+body {
+    font-family: Georgia, serif;
+    color: #111;
+}
+
+a {
+    text-decoration: none;
+}
+
+.back-img {
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    opacity: 0.12;
+    background-size: 1000px 1000px;
+    background-attachment: fixed;
+    background-image: url('../img/cat.jpg');
+    background-position: right 120px;
+    background-repeat: no-repeat;
+}
+
+pre code {
+    background: none;
+    border-radius: 4px;
+    font-size: 1.5em;
+    padding-left: 0px;
+}
+
+pre {
+    margin-top: 0px;
+}
+
+.main {
+    margin-top: 50px;
+}
+
+.main section.sub {
+    margin-top: 30px;
+}
+
+aside {
+    color: #222;
+}
+
+aside h1 {
+    font-size: 3.5em;
+    margin: 0px;
+}
+
+aside h2 {
+    font-size: 2em;
+    margin: 0px;
+}
+
+nav {
+    font-family: 'lucida console', monaco, 'andale mono', 'bitstream vera sans mono', consolas, !important;
+}
+
+nav h2 {
+    text-transform: uppercase;
+    color: #555;
+    letter-spacing: 3px;
+}
+
+nav a {
+    color: #555;
+    font-family: 'lucida console', monaco, 'andale mono', 'bitstream vera sans mono', consolas, !important;
+}
+
+.nav a:active {
+    color: #555;
+}
+
+.nav a:visited {
+    color: #555;
+}
