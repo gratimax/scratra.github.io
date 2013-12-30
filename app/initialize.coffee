@@ -1,1 +1,1 @@
-console.log 'hi'
+hljs.initHighlightingOnLoad()
