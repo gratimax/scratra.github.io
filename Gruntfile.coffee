@@ -15,7 +15,8 @@ module.exports = (grunt) ->
       src: ['**']
 
     clean:
-      deploy: ['public/', '.grunt/']
+      public: ['public/']
+      grunt: ['.grunt/']
 
   grunt.registerTask 'brunch:production', 'brunch build --production', ->
     done = @async()
@@ -23,4 +24,4 @@ module.exports = (grunt) ->
     brunch.build production: true, ->
       done()
 
-  grunt.registerTask 'deploy', ['brunch:production', 'gh-pages', 'clean:deploy']
+  grunt.registerTask 'deploy', ['clean', 'brunch:production', 'gh-pages', 'clean']
