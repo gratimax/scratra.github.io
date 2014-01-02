@@ -1,0 +1,48 @@
+extends _layout
+
+block title
+    |  Home
+
+block main
+
+    .main.home
+
+        section.row
+            aside.large-3.columns
+                h1 Scratra
+            nav.large-9.columns
+                h2: a(href='/intro.html') Readme
+                h2: a(href='/docs.html') Documentation
+                h2: a(href='http://github.com/scratra/scratra') Code
+                h2: a(href='https://github.com/scratra/scratra/archive/master.zip') Download
+                h2: a(href='https://raw.github.com/scratra/scratra/master/LICENSE') License
+
+        section.row
+            aside.large-3.columns
+                h2 Put this in your catnip
+            article.large-9.columns
+                pre.code.python.
+                    from scratra import *
+
+                    @start
+                    def started(scratch):
+                        print('Started!')
+
+                    @broadcast('hi')
+                    def hi(scratch):
+                        scratch.broadcast('Hello, World!')
+
+                    run()
+
+        section.row
+            aside.large-3.columns
+                h2 And then meow
+            article.large-9.columns
+                pre.code
+                    span.keyword $
+                    span.title.function  python
+                    span.params  hi.py
+                    span.string
+                        | &nbsp;
+                        | blah blah
+                        | blah

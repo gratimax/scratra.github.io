@@ -1,0 +1,22 @@
+extends _layout
+
+block main
+
+    .main
+
+        section.row
+            .large-12.columns.text-center.styled-headings
+                h1 Scratra
+
+        nav.row.no-margin
+            .large-12.columns.styled-headings
+                .rest
+                .links
+                    h2: a(href='/') ←Home
+                    h2: a(href='/intro.html') Readme
+                    h2: a(href='/docs.html') Documentation
+                    h2: a(href='http://github.com/scratra/scratra') Code
+                    h2: a(href='https://github.com/scratra/scratra/archive/master.zip') Download
+                    h2: a(href='https://raw.github.com/scratra/scratra/master/LICENSE') License
+
+        block content
